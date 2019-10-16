@@ -31,18 +31,6 @@ elif os.path.exists("/usr/bin/apt"):
     bpath="/usr/bin/"
     pac="apt-get"
 
-elif os.path.exists("/usr/bin/apt"):
-  if os.path.exists("/usr/bin/sudo"):
-    systm="ubuntu"
-    hpath=os.getenv("HOME")+"/"
-    bpath="/usr/bin/"
-    pac="sudo apt-get"
-  else:
-    systm="debian"
-    hpath=os.getenv("HOME")+"/"
-    bpath="/usr/bin/"
-    pac="apt-get"
-
 elif os.path.exists("/data/data/com.termux/files/usr/bin/pkg"):
   systm="termux"
   hpath=os.getenv("HOME")+"/"
@@ -297,7 +285,7 @@ def Toolx():
 		Ux()
 		Logo()
 		Tool = raw_input('''\033[1;33m Do you want to install Tool-X [Y/n]> \033[00m''')
-		while Tool == "Y" or Tool == "y":
+		while Tool == "Y" or Tool == "y" or Tool == "":
 			Ux()
 			proce()
 			Toolo = raw_input("\033[1;33m Press any key to continue >>> \033[00m")
