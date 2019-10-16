@@ -133,7 +133,8 @@ def term():
       Toolo = raw_input("\033[1;33m Do you want to Exit ? [Y/n] >  \033[01;33m")
       if Toolo == "N" or Toolo == "n":
         term()
-      elif Toolo == "Y" or Toolo == "y":
+        # make Y option default option
+      elif Toolo == "Y" or Toolo == "y" or Toolo == "":
         exit()
       else:
         print ("\033[01;34m\007\n error : \033[01;37m\'"+Toolo+"\' \033[01;31minvalid option !!!")
@@ -150,7 +151,7 @@ def ubu():
     menu()
     Tool = raw_input('''\033[1;36m
  ##> \033[01;37m''')
-
+# is better to use switch statements in this cases
     if Tool == "0":
       all()
     elif Tool == "1":
@@ -175,7 +176,8 @@ def ubu():
       Toolo = raw_input("\033[1;33m Do you want to Exit ? [Y/n] >  \033[1;m")
       if Toolo == "N" or Toolo == "n":
         ubu()
-      elif Toolo == "Y" or Toolo == "y":
+        # make Y option default
+        elif Toolo == "Y" or Toolo == "y" or Toolo == "":
         exit()
       else:
         print ("\033[01;34m\007\n error : \033[01;37m\'"+Toolo+"\' \033[01;31minvalid option !!!")
