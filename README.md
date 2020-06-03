@@ -36,9 +36,11 @@ Open the terminal and type following commands.
 
 * `apt update`
 
+* `apt upgrade`
+
 * `apt install git`
 
-* `git clone https://github.com/AnonymousBangla2000/Tool-X.git`
+* `git clone https://github.com/AnonymousBangla/Tool-X.git`
 
 * `cd Tool-X`
 
