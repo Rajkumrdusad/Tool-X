@@ -2975,4 +2975,12 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   }
+  "rsfac" : { 
+    "name" : "Reverse Shell Factory",
+    "package_name" : "rsfac",
+    "category" : ["web_hacking","exploitation_tools"],
+    "url" : "https://github.com/farinap5/A-xex.git",
+    "package_manager" : "git",
+    "dependency" : ["python","git"]
+  }
 }
