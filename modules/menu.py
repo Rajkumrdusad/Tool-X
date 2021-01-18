@@ -103,46 +103,46 @@ class main:
       if cmd=="1":
         system=sys()
         # if system.connection():
-          os.system("clear")
-          logo.updating()
-          if system.sudo != None:
-            if os.path.exists(system.home+"/Tool-X"):
-              pass
-            else:
-              os.system(system.sudo+" git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Tool-X")
-            if os.path.exists(system.home+"/Tool-X/install.aex"):
-              os.system("cd "+system.home+"/Tool-X && "+system.sudo+" sh install.aex")
-              if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
-                os.system("clear")
-                logo.updated()
-                cmd=input("\033[1;36m ##> \033[00m")
-              else:
-                os.system("clear")
-                logo.update_error()
-                cmd=input("\033[1;36m ##> \033[00m")
+        os.system("clear")
+        logo.updating()
+        if system.sudo != None:
+          if os.path.exists(system.home+"/Tool-X"):
+            pass
+          else:
+            os.system(system.sudo+" git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Tool-X")
+          if os.path.exists(system.home+"/Tool-X/install.aex"):
+            os.system("cd "+system.home+"/Tool-X && "+system.sudo+" sh install.aex")
+            if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+              os.system("clear")
+              logo.updated()
+              cmd=input("\033[1;36m ##> \033[00m")
             else:
               os.system("clear")
               logo.update_error()
               cmd=input("\033[1;36m ##> \033[00m")
           else:
-            if os.path.exists(system.home+"/Tool-X"):
-              pass
-            else:
-              os.system("git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Tool-X")
-            if os.path.exists(system.home+"/Tool-X/install.aex"):
-              os.system("cd "+system.home+"/Tool-X && sh install.aex")
-              if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
-                os.system("clear")
-                logo.updated()
-                cmd=input("\033[1;36m ##> \033[00m")
-              else:
-                os.system("clear")
-                logo.update_error()
-                cmd=input("\033[1;36m ##> \033[00m")
+            os.system("clear")
+            logo.update_error()
+            cmd=input("\033[1;36m ##> \033[00m")
+        else:
+          if os.path.exists(system.home+"/Tool-X"):
+            pass
+          else:
+            os.system("git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Tool-X")
+          if os.path.exists(system.home+"/Tool-X/install.aex"):
+            os.system("cd "+system.home+"/Tool-X && sh install.aex")
+            if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+              os.system("clear")
+              logo.updated()
+              cmd=input("\033[1;36m ##> \033[00m")
             else:
               os.system("clear")
               logo.update_error()
               cmd=input("\033[1;36m ##> \033[00m")
+          else:
+            os.system("clear")
+            logo.update_error()
+            cmd=input("\033[1;36m ##> \033[00m")
         # else:
         #   os.system("clear")
         #   logo.nonet()
