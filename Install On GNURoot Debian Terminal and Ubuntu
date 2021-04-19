@@ -1,0 +1,16 @@
+# HOW TO INSTALL TOOL-X ON LINUX ( GNURoot Debian Terminal ; Ubuntu )
+---------------------GNURoot Debian Terminal-----------------
+ apt update
+ apt install git
+ cd && git clone https://github.com/Rajkumrdusad/Tool-X.git
+ cd Tool-X
+ chmod +x install.aex
+ sh install.aex if not work than type ./install.aex
+ 
+ -------------------Ubuntu-------------------------
+ sudo apt-get Update
+ sudo apt-get install git
+ sudo git clone https://github.com/Rajkumrdusad/Tool-X.git
+ cd Tool-X
+ chmod +x install.aex
+ sudo sh install.aex OR ./install.aex
